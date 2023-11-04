@@ -1,0 +1,27 @@
+
+Feature: Detección de Seguridad en Secure AI
+
+  Escenario 1: Detección de movimiento sospechoso
+    Dado que el usuario ha activado el sistema de Secure AI
+    Cuando los sensores de movimiento detectan actividad en una zona protegida
+    Entonces el sistema activa una alarma sonora
+    Y el sistema envía una notificación al dispositivo móvil del usuario.
+
+  Escenario 2: Detección de acceso forzado
+    Dado que el usuario ha activado el sistema de Secure AI
+    Cuando los sensores de puertas y ventanas detectan un acceso forzado
+    Entonces el sistema activa una alarma sonora
+    Y el sistema envía una notificación al dispositivo móvil del usuario.
+
+
+  Escenario 3: Detección de sonido inusual
+    Dado que el usuario ha activado el sistema de Secure AI
+    Cuando los sensores de sonido captan ruidos inusuales
+    Entonces el sistema activa una alarma sonora
+    Y el sistema envía una notificación al dispositivo móvil del usuario.
+
+  Escenario 4: Detección de presencia no autorizada
+    Dado que el usuario ha activado el sistema de Secure AI
+    Cuando los sensores de presencia detectan la presencia de personas no autorizadas en el hogar
+    Entonces el sistema activa una alarma sonora
+    Y el sistema envía una notificación al dispositivo móvil del usuario.

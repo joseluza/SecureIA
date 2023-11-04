@@ -1,0 +1,26 @@
+Feature: Registro de Usuario en Secure IA
+
+  Escenario 1: Acceso a la página de registro
+    Dado que el usuario se encuentra en la página principal de Secure IA
+    Cuando el usuario le dé clic al botón de “Registrarse”
+    Entonces la aplicación mostrará la página de registro de usuario.
+
+  Escenario 2: Registro de nuevo usuario válido.
+    Dado que el usuario se encuentra en la página de registro
+    Cuando el usuario ingrese los datos solicitados por la aplicación correctamente (nombre completo, correo electrónico, teléfono, DNI, contraseña, edad)
+    Y el usuario le dé clic al botón de “Crear cuenta”
+    Entonces la cuenta será creada.
+
+    Ejemplo:
+      | Nombre Completo | Correo Electrónico      | Teléfono      | DNI       | Contraseña     | Edad |
+      | Juan Perez      | juan@example.com       | 123456789     | 12345678  | securePassword | 30   |
+
+  Escenario 3: Registro de nuevo usuario con datos inválidos.
+    Dado que el usuario se encuentra en la página de registro
+    Cuando el usuario ingrese los datos solicitados por la aplicación con datos inválidos (nombre completo, correo electrónico, usuario, contraseña, foto de usuario)
+    Y el usuario le dé clic al botón de “Crear cuenta”
+    Entonces la aplicación mostrará un mensaje de “Datos no válidos” bajo la(s) casilla(s) a corregir.
+
+    Ejemplo:
+      | Nombre Completo | Correo Electrónico      | Usuario     | Contraseña    | Foto de Usuario |
+      |                | correo_invalido.com    | username123 | pass123       |                |

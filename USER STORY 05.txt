@@ -1,0 +1,25 @@
+Feature: Configuración de Privacidad en Secure IA
+
+  Escenario 1: Acceso a configuración de privacidad
+    Dado que el usuario ha iniciado sesión
+    Cuando el usuario acceda a la sección de configuración de privacidad
+    Entonces el sistema mostrará el resumen de quiénes tienen acceso a su perfil según la configuración actual.
+
+  Escenario 2: Ocultar/Mostrar información de contacto
+    Dado que el usuario se encuentra en la sección de configuración de privacidad
+    Cuando el usuario ajuste las preferencias de privacidad para su información de contacto
+    Entonces el sistema mostrará la opción ocultar o mostrar selectivamente su información de contacto según sus preferencias.
+
+    Ejemplo para Escenario 2:
+      | Información de Contacto  | Preferencia |
+      | Dirección de Correo     | Ocultar     |
+      | Número de Teléfono      | Mostrar     |
+
+  Escenario 3: Alertas de cambio de privacidad
+    Dado que el usuario se encuentra en la sección de configuración de privacidad
+    Cuando el usuario configure las notificaciones de privacidad
+    Entonces el sistema mostrará la opción de recibir alertas cuando haya cambios significativos en la configuración de privacidad de su cuenta.
+
+    Ejemplo para Escenario 3:
+      | Configuración de Notificaciones | Preferencia |
+      | Alertas de Cambio de Privacidad | Activado    |

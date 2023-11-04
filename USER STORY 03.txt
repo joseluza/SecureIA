@@ -1,0 +1,21 @@
+Feature: Gestión de Notificaciones en Secure IA
+
+  Escenario 1: Acceso a la página de notificaciones
+    Dado que el usuario se encuentra en la página principal
+    Cuando el usuario le dé clic al botón de “Configuración”
+    Entonces la aplicación mostrará el apartado de notificaciones.
+
+  Escenario 2: Acceso a las categorías de notificaciones
+    Dado que el usuario se encuentra en la página de configuración
+    Cuando el usuario le de clic al botón "Mis Notificaciones"
+    Entonces el sistema mostrará las categorías de notificaciones.
+
+  Escenario 3: Desactivar notificaciones
+    Dado que el usuario se encuentra en la página de categoría de notificaciones
+    Cuando el usuario de clic en alguna categoría de notificación
+    Entonces el sistema no mostrará la categoría de notificación seleccionada.
+
+    Ejemplo para Escenario 3:
+      Supongamos que el usuario ha desactivado la categoría "Notificaciones de Promociones" y desea verificar que esta categoría no se muestre:
+      | Categoría                 | Estado  |
+      | Notificaciones de Promociones | Desactivada |

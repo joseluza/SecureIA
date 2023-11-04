@@ -1,0 +1,38 @@
+
+Feature: Historial de Actividades en Secure IA
+
+  Escenario 1: Acceso al historial de actividades
+    Dado que el usuario ha iniciado sesión
+    Y se encuentra en la página principal
+    Cuando el usuario acceda a la sección de historial de actividades
+    Entonces el sistema mostrará una lista cronológica de actividades.
+
+  Escenario 2: Nombre del autor
+    Dado que el usuario se encuentra en el historial de actividades
+    Cuando el usuario inspeccione la entrada
+    Entonces el sistema mostrará información sobre el autor responsable de la acción.
+
+    Ejemplo para Escenario 2:
+      | Actividad        | Autor       |
+      | Actualización    | Juan Perez  |
+      | Creación         | Maria Lopez |
+
+  Escenario 3: Fecha y hora de la actividad
+    Dado que el usuario se encuentra revisando una entrada de actividad en el historial
+    Cuando el usuario observe la entrada
+    Entonces el sistema mostrará la fecha y hora exactas de la actividad.
+
+    Ejemplo para Escenario 3:
+      | Actividad        | Fecha y Hora              |
+      | Actualización    | 2023-11-01 14:30:00 UTC   |
+      | Creación         | 2023-11-02 09:45:00 UTC   |
+
+  Escenario 4: Detalles adicionales de la actividad
+    Dado que el usuario se encuentra revisando una entrada de actividad en el historial
+    Cuando el usuario examine la entrada
+    Entonces el sistema mostrará detalles adicionales de la actividad realizada.
+
+    Ejemplo para Escenario 4:
+      | Actividad        | Detalles                                 |
+      | Actualización    | Se modificó el campo "Nombre"            |
+      | Creación         | Se creó un nuevo documento               |
